@@ -1,14 +1,17 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-import { Toaster, toast } from 'sonner'
-import { AnimatedCursor } from "@/components/AnimatedCursor";
-import { Navbar } from "@/components/Navbar";
-const inter = Inter({ subsets: ["latin"] });
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import './globals.css';
+
+import { Toaster } from 'sonner';
+
+import { Navbar } from '@/components/Navbar';
+import { AnimatedCursor } from '@/components/AnimatedCursor';
+
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: "Mohit Dudhat",
-  description: "Mohit Dudhat Portfolio",
+  title: 'Sargam Poudel',
+  description: 'A student and backend developer based on Bangalore, India',
 };
 
 export default function RootLayout({
@@ -19,12 +22,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navbar/>
-        <div className="h-full w-full dark:bg-black bg-white  dark:bg-grid-white/[0.10] bg-grid-black/[0.2] relative flex items-center justify-center">
-        <AnimatedCursor />
-        <Toaster />
+        <main className=" dark:bg-black bg-white dark:bg-grid-small-white/[0.3] sm:dark:bg-grid-white/[0.1] bg-grid-black/[0.1]">
+          <Navbar />
+          <AnimatedCursor />
+          <Toaster />
           {children}
-        </div>
+          {/* <SpeedInsights />
+          <Analytics /> */}
+        </main>
       </body>
     </html>
   );
