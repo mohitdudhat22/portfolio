@@ -2,51 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
-
+/* Copied from https://codepen.io/jakejarvis/pen/pBZWZw */
 .wave {
   animation-name: wave-animation;
-  animation-duration: 2.5s;
+  animation-duration: 3s;
   animation-iteration-count: infinite;
   transform-origin: 70% 70%;
   display: inline-block;
 }
 
 @keyframes wave-animation {
-  0% { transform: rotate( 0.0deg) }
-  15% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
-  30% { transform: rotate(-8.0deg) }
-  40% { transform: rotate(14.0deg) }
-  50% { transform: rotate(-4.0deg) }
-  60% { transform: rotate(10.0deg) }
-  70% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
- 100% { transform: rotate( 0.0deg) }
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(20deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(20deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(14deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
 }

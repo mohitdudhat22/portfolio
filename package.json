@@ -11,7 +11,7 @@
   "dependencies": {
     "@tabler/icons-react": "^3.11.0",
     "clsx": "^2.1.1",
-    "framer-motion": "^11.3.21",
+    "framer-motion": "^11.3.22",
     "icons-react": "^3.7.1",
     "lucide-react": "^0.424.0",
     "mini-svg-data-uri": "^1.4.4",

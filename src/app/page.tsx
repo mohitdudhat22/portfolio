@@ -10,7 +10,7 @@ export default function Home() {
       .writeText(text)
       .then(() => {
         console.log("Text copied to clipboard:", text);
-        toast.success("Copied to clipboard");
+        toast.success("Copied to clipboard",{description:"Make Sure you run it on your terminal <3"});
       })
       .catch((err) => {
         console.error("Error copying text to clipboard:", err);
