@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navbar/>
+        {/* <Navbar/> */}
         <div className="h-full w-full dark:bg-black bg-white  dark:bg-grid-white/[0.10] bg-grid-black/[0.2] relative flex items-center justify-center">
         <AnimatedCursor />
         <Toaster />
