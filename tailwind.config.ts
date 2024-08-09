@@ -22,6 +22,9 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      colors:{
+        foreground : '#8646d7',
+      },
     },
     animation: {
       shimmer: 'shimmer 2s linear infinite',
