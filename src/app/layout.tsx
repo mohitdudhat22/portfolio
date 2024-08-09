@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: 'Sargam Poudel',
   description: 'A student and backend developer based on Bangalore, India',
 };
-
+//TODO: fix the font reloading problem
 export default function RootLayout({
   children,
 }: Readonly<{

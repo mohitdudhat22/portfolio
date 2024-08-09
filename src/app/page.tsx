@@ -1,5 +1,6 @@
 import { CopyBtn } from '@/components/CopyBtn';
 import Skills from '@/components/Skills';
+import Work from '@/components/Work';
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
         </div>
       </div>
       <Skills />
+      <Work/>
       {/* <Projects />
       <ContactMe /> */}
     </>

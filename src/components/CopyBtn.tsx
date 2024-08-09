@@ -5,7 +5,7 @@ import { toast } from 'sonner';
 export const CopyBtn = () => {
   const handleClick = () => {
     navigator.clipboard.writeText('npx devsargam');
-    toast('Text has been copied');
+    toast('Text has been copied',{description:"make sure you run this on your terminal!!! <3"});
   };
 
   return (
